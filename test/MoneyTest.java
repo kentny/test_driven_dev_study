@@ -6,11 +6,8 @@ public class MoneyTest {
     @Test
     public void testMoneyMultiplication() {
         Dollar five = new Dollar(5);
-        Dollar product = five.times(2);
-        assertEquals(product.amount, 10);
-
-        product = five.times(3);
-        assertEquals(product.amount, 15);
+        assertEquals(new Dollar(10), five.times(2));
+        assertEquals(new Dollar(15), five.times(3));
     }
 
     @Test
